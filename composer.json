@@ -1,5 +1,5 @@
 {
-  "name": "yarcode/yii2-async-mailer",
+  "name": "phplego/yii2-async-mailer",
   "description": "Async mailer decorator for Yii2",
   "type": "yii2-extension",
   "keywords": [
@@ -8,18 +8,18 @@
     "mailer",
     "queue"
   ],
-  "homepage": "http://packagist.org/packages/yarcode/yii2-async-mailer",
+  "homepage": "https://github.com/phplego/yii2-async-mailer",
   "license": "MIT",
   "authors": [
     {
-      "name": "Alexey Samoylov",
-      "email": "alexey.samoylov@gmail.com",
+      "name": "Oleg Dubrov",
+      "email": "phplego@gmail.com",
       "role": "Developer"
     }
   ],
   "support": {
-    "issues": "https://github.com/yarcode/yii2-async-mailer/issues",
-    "source": "https://github.com/yarcode/yii2-async-mailer"
+    "issues": "https://github.com/phplego/yii2-async-mailer/issues",
+    "source": "https://github.com/phplego/yii2-async-mailer"
   },
   "require": {
     "yiisoft/yii2": "~2",
@@ -28,7 +28,7 @@
   },
   "autoload": {
     "psr-4": {
-      "YarCode\\Yii2\\AsyncMailer\\": "./src"
+      "PhpLego\\Yii2\\AsyncMailer\\": "./src"
     }
   }
 }
