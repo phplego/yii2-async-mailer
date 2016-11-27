@@ -2,7 +2,7 @@
 /**
  * @author Alexey Samoylov <alexey.samoylov@gmail.com>
  */
-namespace YarCode\Yii2\AsyncMailer\Tasks;
+namespace PhpLego\Yii2\AsyncMailer\Tasks;
 
 use bazilio\async\models\AsyncTask;
 use YarCode\Yii2\AsyncMailer\Mailer;
