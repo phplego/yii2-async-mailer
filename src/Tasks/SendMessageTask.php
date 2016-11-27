@@ -30,6 +30,8 @@ class SendMessageTask extends AsyncTask
             throw new InvalidConfigException('Mailer must be an instance of ' . Mailer::class);
         }
 
-        return $asyncMailer->getSyncMailer()->send($this->mailMessage);
+        $result = $asyncMailer->getSyncMailer()->send($this->mailMessage);
+        $asyncMailer->getSyncMailer()->getTransport()->stop();
+        return $result;
     }
 }
