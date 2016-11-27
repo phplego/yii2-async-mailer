@@ -1,4 +1,4 @@
-# yarcode/yii2-async-mailer
+# phplego/yii2-async-mailer
 Async mailer decorator for Yii2
 
 ## Installation
@@ -8,13 +8,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist yarcode/yii2-async-mailer
+php composer.phar require --prefer-dist phplego/yii2-async-mailer
 ```
 
 or add
 
 ```json
-"yarcode/yii2-async-mailer": "*"
+"phplego/yii2-async-mailer": "*"
 ```
 
 ## Usage
@@ -22,11 +22,11 @@ or add
 Configure `async` component of your application. 
 You can find the details here: https://packagist.org/packages/bazilio/yii2-async
 
-Configure `YarCode\Yii2\AsyncMailer\Mailer` as your primary mailer.
+Configure `PhpLego\Yii2\AsyncMailer\Mailer` as your primary mailer.
 
 ```
   'mailer' => [
-      'class' => '\YarCode\Yii2\AsyncMailer\Mailer',
+      'class' => '\PhpLego\Yii2\AsyncMailer\Mailer',
       'syncMailer' => [
           'class' => 'yii\swiftmailer\Mailer',
           'useFileTransport' => true,
@@ -37,7 +37,7 @@ Add mailer command to the console config file.
 ```
   'controllerMap' => [
       'mailer' => [
-          'class' => '\YarCode\Yii2\AsyncMailer\MailerCommand',
+          'class' => '\PhpLego\Yii2\AsyncMailer\MailerCommand',
       ],
   ],
 ```
