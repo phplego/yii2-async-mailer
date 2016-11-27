@@ -1,12 +1,9 @@
 <?php
-/**
- * @author Alexey Samoylov <alexey.samoylov@gmail.com>
- */
 namespace PhpLego\Yii2\AsyncMailer;
 
 use bazilio\async\AsyncComponent;
-use YarCode\Yii2\AsyncMailer\Tasks\SendMessageTask;
-use YarCode\Yii2\AsyncMailer\Tasks\SendMultipleMessagesTask;
+use PhpLego\Yii2\AsyncMailer\Tasks\SendMessageTask;
+use PhpLego\Yii2\AsyncMailer\Tasks\SendMultipleMessagesTask;
 use yii\base\Component;
 use yii\base\InvalidConfigException;
 use yii\mail\MailerInterface;

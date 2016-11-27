@@ -1,11 +1,7 @@
 <?php
-/**
- * @author Alexey Samoylov <alexey.samoylov@gmail.com>
- */
 namespace PhpLego\Yii2\AsyncMailer;
 
 use bazilio\async\AsyncComponent;
-use YarCode\Yii2\Daemon\DaemonCommand;
 
 class MailerCommand extends DaemonCommand
 {

@@ -1,11 +1,8 @@
 <?php
-/**
- * @author Alexey Samoylov <alexey.samoylov@gmail.com>
- */
 namespace PhpLego\Yii2\AsyncMailer\Tasks;
 
 use bazilio\async\models\AsyncTask;
-use YarCode\Yii2\AsyncMailer\Mailer;
+use PhpLego\Yii2\AsyncMailer\Mailer;
 use yii\base\InvalidConfigException;
 use yii\mail\MessageInterface;
 
