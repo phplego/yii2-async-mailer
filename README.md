@@ -1,20 +1,25 @@
 # phplego/yii2-async-mailer
-Async mailer decorator for Yii2
+Async mailer decorator for Yii2. This repository is forked from [yarcode/yii2-async-mailer](https://github.com/yarcode/yii2-async-mailer). The main difference is closing connection after mail send. The reason is to avoid known [bug with smtp connection] (https://github.com/swiftmailer/swiftmailer/issues/490).
 
 ## Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-Either run
-
-```
-php composer.phar require --prefer-dist phplego/yii2-async-mailer
-```
-
-or add
+Add to composer.json
 
 ```json
-"phplego/yii2-async-mailer": "*"
+{
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/phplego/yii2-async-mailer"
+        }
+    ],
+    "require": {
+        "phplego/yii2-async-mailer": "*"
+    }
+}
+
 ```
 
 ## Usage
